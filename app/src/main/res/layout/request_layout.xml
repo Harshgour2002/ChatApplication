@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="10dp"
+        android:backgroundTint="#E4E4E3"
+        android:layout_margin="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="8dp"
+            android:background="@drawable/list_card_design"
+            android:layout_gravity="center_vertical">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/dp"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="6dp"
+            android:src="@drawable/person"
+            app:strokeColor="@color/d_grey"
+            app:strokeWidth="1dp"
+            android:layout_gravity="center_vertical"
+            app:shapeAppearance="@style/imageViewShape"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:layout_gravity="center_vertical"
+            android:textSize="30dp"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="requested to chat with you"
+                    android:textAllCaps="true"
+                    android:textStyle="italic"
+                    android:fontFamily="@font/fredoka"
+                    android:layout_marginBottom="4dp"/>
+
+            </LinearLayout>
+
+
+            <ImageButton
+                android:id="@+id/reject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/dangerous_24px"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/accept_reject_design"/>
+
+            <ImageButton
+                android:id="@+id/accept"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/check_circle_24px"
+                android:layout_margin="10dp"
+                android:padding="2dp"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/accept_reject_design"/>
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

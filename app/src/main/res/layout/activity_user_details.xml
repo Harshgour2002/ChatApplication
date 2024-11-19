@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".userDetails"
+    android:padding="15dp">
+
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#59F8B714"
+        android:text="back"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="15dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/imageView"
+        android:layout_width="230dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="60dp"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        app:strokeColor="#57410B"
+        app:strokeWidth="3dp"
+        app:shapeAppearance="@style/imageViewShape"
+        android:src="@drawable/user_profile_4255__1_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/back"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="@id/imageView"
+        android:background="@drawable/camera_icon_bg">
+
+
+    <com.google.android.material.imageview.ShapeableImageView
+        android:id="@+id/cameraBtn"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:padding="7dp"
+        app:srcCompat="@drawable/camera"
+        app:shapeAppearance = "@style/cameraBtn"
+        android:background="@drawable/camerabg"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/registerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Full Name"
+        android:drawableLeft="@drawable/name_icon"
+        android:textSize="25sp"
+        android:drawablePadding="15dp"
+        android:paddingLeft="15dp"
+        android:fontFamily="@font/fredoka"
+        android:gravity="center_vertical"
+        android:paddingEnd="25dp"
+        android:background="@drawable/entries_design"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="60dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageView"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/Register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textStyle="bold"
+        android:fontFamily="@font/fredoka"
+        android:textSize="20sp"
+        android:background="@drawable/button_style"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/registerName"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

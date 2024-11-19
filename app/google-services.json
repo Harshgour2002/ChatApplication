@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "718134402309",
+    "project_id": "vision-connect-ed6c9",
+    "storage_bucket": "vision-connect-ed6c9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:718134402309:android:f77ded34c7d8f3880e6b6c",
+        "android_client_info": {
+          "package_name": "com.example.visionconnect"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAo8bJ4qf-3jC5BNG957w4pFly-URjCLJg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

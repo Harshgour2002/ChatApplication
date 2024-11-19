@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".startScreen">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!-- Wrap all inner elements in a container layout, such as LinearLayout -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/welcomeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="welcome"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="60dp"
+                android:textStyle="bold"
+                android:textSize="65dp"
+                android:textColor="@color/d_baidge"
+                android:fontFamily="@font/fredoka"
+                android:layout_gravity="center_horizontal"/>
+
+            <ImageView
+                android:id="@+id/startScreenImage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitXY"
+                android:layout_marginTop="40dp"
+                android:src="@drawable/startscreenimage"
+                android:layout_gravity="center_horizontal"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/SSRegister"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="sign up"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_style"
+                    android:layout_marginRight="8dp"
+                    android:fontFamily="@font/fredoka"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/SSlogin"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:text="log in"
+                    android:background="@drawable/button_style"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="1"
+                    android:fontFamily="@font/fredoka"
+                    android:textSize="18sp"
+                    android:textStyle="bold"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

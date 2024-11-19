@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="imageViewShape">
+        <item name="color"> @color/l_baidge</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+    </style>
+
+    <style name="cameraBtn">
+        <item name="color">@color/l_baidge</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">20%</item>
+    </style>
+
+    <style name="FAB">
+        <item name="android:color">@color/l_baidge</item>
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">50%</item>
+        <item name="strokeColor">#57410B</item>
+        <item name="strokeWidth">3dp</item>
+    </style>
+    
+</resources>
