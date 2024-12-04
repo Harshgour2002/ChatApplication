@@ -41,6 +41,7 @@ class notification : AppCompatActivity() { // Naming convention improved
         super.onCreate(savedInstanceState)
         binding = ActivityNotificationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         // Set up edge-to-edge display and insets
         ViewCompat.setOnApplyWindowInsetsListener(binding.root) { view, insets ->
